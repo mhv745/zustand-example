@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 import { user } from './store'
 
-export default function ConnectCount({data}) {
+export default function ConnectUser({data}) {
     const initialized  = useRef(false)
 
     if (!initialized.current) {

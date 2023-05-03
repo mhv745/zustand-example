@@ -1,11 +1,12 @@
 import ClientCounter from '../clientComponents/clientCounter'
+import InfoClient from '../clientComponents/clientInfo'
 import ClientTheme from '../clientComponents/clientTheme'
 import ClientUser from '../clientComponents/clientUser'
 import ServerCounter from '../serverComponents/serverCounter'
 import ServerTheme from '../serverComponents/serverTheme'
 
 export default function AboutPage(){
-
+    
     return (
         <>
             <h1>About Page</h1>
@@ -17,7 +18,8 @@ export default function AboutPage(){
             <ClientCounter />
             <hr />
             <ClientUser />
-
+            <hr />
+            <InfoClient />
         </>
     )
 }
