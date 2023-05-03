@@ -11,7 +11,7 @@ export default async function RootLayout({ children }) {
   const themeState = await fetch(URL_THEME).then(res => res.json())
   const counterState = {count: 100}
   
-  theme.setState(themeState, true)  
+  theme.setState(themeState)  
   counter.setState(counterState)
   user.setState(userState)
   

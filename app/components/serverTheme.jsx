@@ -1,6 +1,6 @@
 import { theme } from '../store/store'
 
-export default async function ServerTheme(){
+export default function ServerTheme(){
     const color = theme.getState().color
 
     console.log("ServerTheme",color)
