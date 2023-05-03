@@ -1,6 +1,4 @@
-import { create, createStore, useStore } from 'zustand'
-import { shallow, subscribeWithSelector } from 'zustand/middleware'
-
+import { create } from 'zustand'
 
 export const theme = create((set) =>({
     color: "light",
@@ -15,6 +13,6 @@ export const counter = create((set) =>({
 }))
 
 export const user = create((set) =>({
-    name: "John Doe",
+    name: "",
     setName: (name) => set({name})
 }))
