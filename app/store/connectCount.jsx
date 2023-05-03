@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 import { counter } from './store'
 
-export default function InitTheme({data}) {
+export default function ConnectCount({data}) {
     const initialized  = useRef(false)
 
     if (!initialized.current) {

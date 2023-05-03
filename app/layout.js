@@ -1,6 +1,8 @@
 import './globals.css'
-import InitCounter from './store/InitCounter'
-import InitTheme from './store/InitTheme'
+import Navigation from './serverComponents/navigation'
+import ConnectCount from './store/connectCount'
+import ConnectTheme from './store/connectTheme'
+import ConnectUser from './store/connectUser'
 import { counter, theme, user } from './store/store'
 
 const URL_THEME = "http://localhost:3000/api/theme"
@@ -20,9 +22,10 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={themeState.color}>
-        <InitTheme data={themeState} />
-        <InitCounter data={counterState} />
-        {userState.user && <p>Welcome {userState.user}</p>}
+        <ConnectTheme data={themeState} />
+        <ConnectCount data={counterState} />
+        <ConnectUser data={userState} />
+        <Navigation />
         {children}
       </body>
     </html>

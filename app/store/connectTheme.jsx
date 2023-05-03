@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 import { theme } from './store'
 
-export default function InitTheme({data}) {
+export default function ConnectTheme({data}) {
     const initialized  = useRef(false)
 
     if (!initialized.current) {

@@ -1,8 +1,9 @@
 
-import ClientCounter from './components/clientCounter'
-import ClientTheme from './components/clientTheme'
-import ServerCounter from './components/serverCounter'
-import ServerTheme from './components/serverTheme'
+import ClientCounter from './clientComponents/clientCounter'
+import ClientTheme from './clientComponents/clientTheme'
+import ClientUser from './clientComponents/clientUser'
+import ServerCounter from './serverComponents/serverCounter'
+import ServerTheme from './serverComponents/serverTheme'
 
 export default function Home() {
   
@@ -15,6 +16,8 @@ export default function Home() {
         <hr />
         <ServerCounter />
         <ClientCounter />
+        <hr />
+        <ClientUser />
     </main>
   )
 }

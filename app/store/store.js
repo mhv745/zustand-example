@@ -13,6 +13,5 @@ export const counter = create((set) =>({
 }))
 
 export const user = create((set) =>({
-    name: "",
-    setName: (name) => set({name})
+    name: ""
 }))
